@@ -1,0 +1,23 @@
+.my-card {
+    box-shadow: var(--shadow); 
+    min-width: 300px; 
+    border-radius: 0.5rem;
+    padding: 0.8rem; /* Add padding to ensure content is not touching edges */
+    text-align: center; /* Center align text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.my-card p {
+    margin: 0.5rem 0;
+}
+
+.my-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 2rem;
+    flex-wrap: wrap;
+    gap: 12px;
+}

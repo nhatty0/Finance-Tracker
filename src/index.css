@@ -1,13 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+:root {
+  --theme: #2970ff;
+  --black: #000;
+  --white: #fff;
+  --shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  font-family: "Montserrat", serif;
+}
+
+/* Search and Filter */
+.search-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.input-flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 60%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: var(--shadow);
+  height: 2.5rem;
+}
+
+.input-flex input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  height: 100%;
+}
+
+.input-flex input:focus {
+  outline: none;
+}
+
+.select-input {
+  width: 20%;
+  height: 2.5rem;
+  border-radius: 0.5rem !important;
+  padding: 0.2rem 0.5rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+}
+
+.select-input > div {
+  border: none !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Transactions Section */
+.transactions-container {
+  padding: 0 2rem; /* Left and right padding */
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.transactions-title {
+  padding-left: 1rem; /* Left padding for title */
+}
+
+.transactions-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 400px;
+}
+
+/* Transactions Table */
+.transactions-table {
+  padding: 1rem 2rem; /* Adds padding to the table */
 }
